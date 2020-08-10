@@ -1,0 +1,29 @@
+$primaryColor: #0066cc;
+
+img {
+    width: 217px;
+    height: 217px;
+    background: #eee;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.main, .description {
+    color: $primaryColor;
+}
+
+.description ul {
+    margin: 0 40px;
+}
+
+.block {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 700px) {
+    div.img {
+        text-align: center;
+    }
+}

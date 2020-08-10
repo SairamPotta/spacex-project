@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #eee;
+}
+
+.container {
+    margin: 0 20px;
+    h2 {
+        padding: 5px;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-space {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    box-shadow: 0 2px 3px rgba($color: #000000, $alpha: 0.5);
+    background: white;
+}
+
+app-program {
+    .card {
+        height: 100%;
+    }
+}
+

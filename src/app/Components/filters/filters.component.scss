@@ -1,0 +1,36 @@
+.filter-options {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header {
+    border-bottom: 1px solid;
+    text-align: center;
+    padding: 5px 0;
+    margin: 5px auto;
+    width: 80%;
+}
+
+button {
+    margin: 10px 20px;
+    border-radius: 5px;
+    background-color: lightgreen;
+    padding: 5px;
+    border: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+.remove {
+    cursor: pointer;
+    text-align: right;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}

@@ -1,0 +1,7 @@
+<div class="container">
+  <h2>SpaceX Launch Programs</h2>
+  <div class="d-flex programsList">
+    <app-filters class="flex-1" style="max-width: 250px" (emitFilter)="filterData($event)"></app-filters>
+    <app-programs-list class="flex-3 d-flex flex-wrap" [programsList]="programsList"></app-programs-list>
+  </div>
+</div>

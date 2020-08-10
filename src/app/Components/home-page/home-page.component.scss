@@ -1,0 +1,20 @@
+.flex-1 {
+    flex: 1;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+app-programs-list {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .programsList {
+        display: block;
+    }
+    .flex-1, .flex-3 {
+        flex: auto;
+    }
+}

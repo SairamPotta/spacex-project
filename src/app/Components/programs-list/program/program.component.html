@@ -1,0 +1,42 @@
+<div class="card" *ngIf="programInput">
+  <div class="img"><img [src]="programInput.mission_patch_small" [alt]="programInput.mission_name"></div>
+  <div class="block">
+    <div class="heading main">
+      {{ programInput.mission_name + '#' + programInput.flight_number }}
+    </div>
+  </div>
+  <div class="block">
+    <div class="heading"> Mission Id's: </div>
+    <div class="description">
+        <ul>
+        <li *ngFor="let m of programInput.mission_id">
+          {{ m }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="d-flex block">
+    <div class="heading">
+      Launch Year :
+    </div>
+    <div class="description">
+      {{ programInput.launch_year }}
+    </div>
+  </div>
+  <div class="d-flex block">
+    <div class="heading">
+      Successful Launch :
+    </div>
+    <div class="description">
+      {{ programInput.launch_success }}
+    </div>
+  </div>
+  <div class="d-flex block">
+    <div class="heading">
+      Successful landing :
+    </div>
+    <div class="description">
+      {{ programInput.landing_success  }}
+    </div>
+  </div>
+</div>
