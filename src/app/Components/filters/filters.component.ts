@@ -18,6 +18,11 @@ export class FiltersComponent implements OnInit {
   ngOnInit(): void {
   }
  
+  /**
+   * Should highlight the filter and emit the response
+   * @param item Input
+   * @param option Either launched/landed
+   */
   isSelected(item: string | boolean, option?: string) {
     const obj = {};
     if (option === 'launched') {
@@ -39,6 +44,9 @@ export class FiltersComponent implements OnInit {
     this.emitFilter.emit(obj);
   }
 
+  /**
+   * Should remove all the filter options and emit the response.
+   */
   removeFilter() {
     this.activeYear = undefined;
     this.isLaunched = undefined;

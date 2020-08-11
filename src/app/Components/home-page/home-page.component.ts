@@ -18,6 +18,10 @@ export class HomePageComponent implements OnInit {
     this.fetchDetails();
   }
 
+  /**
+   * Apply the filter and fetch the details
+   * @param event Filter event
+   */
   filterData(event) {
     if (event) {
       this.fetchDetails(event);
@@ -26,6 +30,10 @@ export class HomePageComponent implements OnInit {
     }
   }
 
+  /**
+   * Fetch the details from the server by making XHR request
+   * @param event filter event
+   */
   fetchDetails(event?: any) {
     this.programsList = null;
     this._service.fetchDetails(event).subscribe((res: any) => {
@@ -39,6 +47,10 @@ export class HomePageComponent implements OnInit {
     });
   }
 
+  /**
+   * Filter the response and assign to the Program list
+   * @param response XHR Response
+   */
   filterResponse(response) {
     response.forEach(ele => {
       const { flight_number, mission_name, mission_id, launch_year, launch_success, links: { mission_patch_small } } = ele;

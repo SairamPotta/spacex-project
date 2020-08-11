@@ -9,6 +9,10 @@ export class SharedService {
 
   constructor(private _http: HttpClient) { }
 
+  /**
+   * Making XHR reuqest to fetch the details
+   * @param event Filter options
+   */
   fetchDetails(event?: any) {
     let filterOptions = '';
     if (event) {
